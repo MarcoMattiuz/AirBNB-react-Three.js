@@ -9,15 +9,12 @@ import Card from './components/card';
 function App() {
   const cards_map = cards.map(card => {
     return <Card
-    key={card.id}
-     img={card.img} 
-     rating={card.rating} 
-     reviewCount={card.reviewCount} 
-     country={card.reviewCount} 
-     title={card.title}
-     price={card.price}
+      key={card.id}
+      {...card} 
     />
   })
+
+
   return (
     <div className='main-section'>
       <NavBar />
