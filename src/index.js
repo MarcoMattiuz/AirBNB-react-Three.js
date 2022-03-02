@@ -63,8 +63,8 @@ scene.add(pointLight)
 const pointLightBlue = new THREE.PointLight( 0x7209b7, 5, 100 )
 pointLightBlue.position.set(0, 0, -25)
 scene.add(pointLightBlue);
-const pointLightRed = new THREE.PointLight( 0x3a0ca3, 2, 100 )
-pointLightRed.position.set(0, 0, 10)
+const pointLightRed = new THREE.PointLight( 0xffba08, 2, 100 )
+pointLightRed.position.set(0, 0, 5)
 scene.add(pointLightRed);
 // scene.add(ambientLight)
 
@@ -99,7 +99,7 @@ const clock = new THREE.Clock()
 const tick = () => {
     radians1 += 0.005
     radians2 += 0.002
-    radians3 += 0.007
+    radians3 += 0.006
 
     pointLight.position.x = Math.cos(radians1)
     pointLight.position.y = Math.sin(radians1)

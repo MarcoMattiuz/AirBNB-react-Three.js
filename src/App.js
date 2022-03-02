@@ -9,7 +9,7 @@ import Card from './components/card';
 function App() {
   const cards_map = cards.map(card => {
     return <Card
-    key={item.id}
+    key={card.id}
      img={card.img} 
      rating={card.rating} 
      reviewCount={card.reviewCount} 
